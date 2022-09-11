@@ -12,7 +12,7 @@ function App() {
       {/* ---Header--- */}
       <header>
         <nav className="flex justify-end fixed top-0 left-0 w-full bg-my-lightblue border-b-4 border-my-black">
-          <ul className="flex mr-4 text-xl md:text-2xl">
+          <ul className="flex mr-4 md:text-2xl">
             <a href="#welcome-section">
               <li className="p-4 hover:bg-my-skyblue rounded-3xl">
                 Welcome
