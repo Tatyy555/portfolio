@@ -12,7 +12,7 @@ function App() {
       {/* ---Header--- */}
       <header>
         <nav className="flex justify-end fixed top-0 left-0 w-full bg-my-lightblue border-b-4 border-my-black">
-          <ul className="flex mr-4 text-2xl ">
+          <ul className="flex mr-4 text-xl md:text-2xl">
             <a href="#welcome-section">
               <li className="p-4 hover:bg-my-skyblue rounded-3xl">
                 Welcome
@@ -52,7 +52,7 @@ function App() {
 
       {/* Timeline Section */}
       <div id="timeline-section" className="bg-my-lightblue">
-        <div className="max-w-7xl mx-auto flex-col h-screen flex py-20 px-10 2xl:px-0 bg-my-lightblue">
+        <div className="max-w-7xl mx-auto flex-col min-h-screen flex py-20 px-10 2xl:px-0 bg-my-lightblue">
           <h1 className="mb-10 text-4xl underline font-extrabold">
             Timeline
           </h1>
@@ -106,7 +106,7 @@ function App() {
               </a>
               {" "}(JavaScript) with reference to{" "}
               <a href="https://www.youtube.com/playlist?list=PLJ86MSrhnFKVcfaffKPYkvfkPg4qRsijs" className="underline hover:text-my-yellow hover:duration-300">
-                thie youtube by T.Umezawa
+                the youtube by T.Umezawa
               </a>
             </li>
             <li>
@@ -254,17 +254,17 @@ function App() {
 
       {/* ---Contact Section--- */}
       <div id="contact-section" className="flex flex-col text-center h-contact bg-my-lightblue justify-center">
-        <h2 className="text-4xl font-bold underline lg:text-5xl lg:mb-5 pb-3 lg:pb-5 px-6">
-          Please check it if you'd like to know more...
+        <h2 className="text-2xl lg:text-4xl lg:mb-5 pb-3 lg:pb-5 px-6">
+          Please check the followings if you'd like to know more...
         </h2>
         <div className="flex justify-center">
           <a href="https://github.com/Tatyy555" target="_blank"  rel="noopener noreferrer">
-            <p className="px-2 text-2xl lg:text-4xl hover:text-my-yellow hover:translate-y-2 hover:duration-300">
+            <p className="font-extrabold underline px-2 text-3xl lg:text-5xl hover:text-my-yellow hover:translate-y-2 hover:duration-300">
               GitHub
             </p>
           </a>
           <a href="https://www.kaggle.com/tatyy555" target="_blank"  rel="noopener noreferrer">
-            <p className="px-2 text-2xl lg:text-4xl hover:text-my-yellow hover:translate-y-2 hover:duration-300">
+            <p className="font-extrabold underline px-2 text-3xl lg:text-5xl hover:text-my-yellow hover:translate-y-2 hover:duration-300">
               Kaggle
             </p>
           </a>
