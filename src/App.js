@@ -247,8 +247,6 @@ function App() {
               </div>
             </a>
 
-
-
           </div>
         </div>
       </div>
