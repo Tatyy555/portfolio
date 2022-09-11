@@ -218,7 +218,7 @@ function App() {
                 </div>
                 <div className="p-5">
                   <h2 className="text-3xl">RPG Game</h2>
-                  <p className="mt-2 text-sm">Work description</p>
+                  <p className="mt-2 text-sm">2D RPG Game</p>
                 </div>
               </div>
             </a>
@@ -229,8 +229,8 @@ function App() {
                   <img className="h-60 w-60 rounded-2xl object-cover" src={web3Wave} alt="" />
                 </div>
                 <div className="p-5">
-                  <h2 className="text-3xl">web3 Wave App</h2>
-                  <p className="mt-2 text-sm">Work description</p>
+                  <h2 className="text-3xl">Web3 Wave App</h2>
+                  <p className="mt-2 text-sm">Web3 App for waving with message using Rinkeby Testnet</p>
                 </div>
               </div>
             </a>
@@ -242,7 +242,7 @@ function App() {
                 </div>
                 <div className="p-5">
                   <h2 className="text-3xl">NFT Drop App</h2>
-                  <p className="mt-2 text-sm">Work description</p>
+                  <p className="mt-2 text-sm">NFT drop of super creatures using Goerli Testnet</p>
                 </div>
               </div>
             </a>
