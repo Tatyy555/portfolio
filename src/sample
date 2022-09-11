@@ -1,0 +1,209 @@
+<!-- Declare the document type -->
+<!DOCTYPE html>
+<!-- Create html tag and Specify the language -->
+<html lang="en">
+  <!-- Create head tag -->
+  <head>
+    <!-- Specify the encoding -->
+    <meta charset="UTF-8">
+    <!-- Create title tag -->
+    <title>Personal Portfolio</title>
+    <!-- Link with css -->
+    <link rel="stylesheet" href="styles.css" />
+  <!-- Close head tag -->
+  </head>
+
+  <!-- Create body tag -->
+  <body>
+    <!-- Create header element -->
+    <header id="header">
+      <nav id="navbar">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#welcome-section">Welcome</a></li>
+          <li><a class="nav-link" href="#projects">Work</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+			  </ul>
+      </nav>
+    </header>
+    <!-- End header element -->
+
+    <!-- Create welcome-section -->
+    <section id="welcome-section">
+      <h1>Nice to meet you! <br>I'm Tatsuya Yamaguchi.</h1>
+      <p>a web developer</p>
+    </section>
+    <!-- End welcome-section -->
+
+    <!-- Create projects sections -->
+    <section id="projects">
+      <h2>These are some of my projects.</h2>
+      <div class="gallary">
+        <a
+          href="sample-link"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"
+            alt="project"
+          >
+          <p class="project-title">
+            Sample Image 1
+          </p>
+        </a>
+
+        <a
+          href="sample-link"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg"
+            alt="project"
+          >
+          <p class="project-title">
+            Sample Image 2
+          </p>
+        </a>
+
+        <a
+          href="sample-link"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg"
+            alt="project"
+          >
+          <p class="project-title">
+            Sample Image 3
+          </p>
+        </a>
+
+        <a
+          href="sample-link"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg"
+            alt="project"
+          >
+          <p class="project-title">
+            Sample Image 4
+          </p>
+        </a>
+
+        <a
+          href="sample-link"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg"
+            alt="project"
+          >
+          <p class="project-title">
+            Sample Image 5
+          </p>
+        </a>
+
+        <a
+          href="sample-link"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg"
+            alt="project"
+          >
+          <p class="project-title">
+            Sample Image 6
+          </p>
+        </a>
+
+        <a
+          href="sample-link"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg"
+            alt="project"
+          >
+          <p class="project-title">
+            Sample Image 7
+          </p>
+        </a>
+
+        <a
+          href="sample-link"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg"
+            alt="project"
+          >
+          <p class="project-title">
+            Sample Image 8
+          </p>
+        </a>
+
+        <a
+          href="sample-link"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg"
+            alt="project"
+          >
+          <p class="project-title">
+            Sample Image 9
+          </p>
+        </a>
+      </div>
+    </section>
+    <!-- End project section -->
+
+    <!-- Create contact section -->
+    <section id="contact">
+        <h2>Please contact me if you would like to know more...</h2>
+        <p>How do you contact?</p>
+      <div class="contact-links">
+        <a
+          id="profile-link"
+          href="https://github.com/Tatyy555"
+          target="_blank"
+          class="contact-details"
+          > GitHub</a
+        >
+        <a href="/cdn-cgi/l/email-protection#b7d2cfd6dac7dbd2f7d2cfd6dac7dbd299d4d8da" class="btn contact-details"> Send a mail</a
+        >
+      </div>
+    </section>
+    <!-- End contact section -->
+
+    <!-- Create footer section -->
+    <footer>
+      <p>
+        Thank you for vising.
+      </p>
+      <p>
+        Created by Tatsuya Yamaguchi
+      </p>
+    </footer>
+    <!-- End footer section -->
+
+  </body>
+</html>
