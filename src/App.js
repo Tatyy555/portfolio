@@ -130,7 +130,7 @@ function App() {
                 href="https://www.youtube.com/playlist?list=PLJ86MSrhnFKVcfaffKPYkvfkPg4qRsijs"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                the youtube by T.Umezawa
+                the YouYube by T.Umezawa
               </a>
             </li>
             <li>
@@ -194,7 +194,7 @@ function App() {
                 href="https://www.youtube.com/watch?v=B1pnHVdnN64&list=PLf16UKl7nR5Avl7PYcU42nt1iz36lxLeU"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                YouTube by Sonny Sangha
+                the YouTube by Sonny Sangha
               </a>
             </li>
           </ul>
@@ -229,7 +229,7 @@ function App() {
                 <div className="p-5">
                   <h2 className="text-3xl">Word Cloud Maker</h2>
                   <p className="mt-2 text-sm">
-                    A code for generating a word cloud from txt
+                    An App for generating a word-cloud from txt using Python
                   </p>
                 </div>
               </div>
@@ -251,7 +251,7 @@ function App() {
                 <div className="p-5">
                   <h2 className="text-3xl">Auto Trading System</h2>
                   <p className="mt-2 text-sm">
-                    A system for auto trading using python and Coincheck
+                    A system for auto trading using Python and Coincheck
                   </p>
                 </div>
               </div>
@@ -273,7 +273,7 @@ function App() {
                 <div className="p-5">
                   <h2 className="text-3xl">News Log App</h2>
                   <p className="mt-2 text-sm">
-                    An iOS app for logging your own news
+                    An iOS app for logging your own news using Flutter
                   </p>
                 </div>
               </div>
@@ -294,7 +294,7 @@ function App() {
                 </div>
                 <div className="p-5">
                   <h2 className="text-3xl">RPG Game</h2>
-                  <p className="mt-2 text-sm">2D RPG Game</p>
+                  <p className="mt-2 text-sm">2D RPG Game using JavaScript (within 10 min to complete)</p>
                 </div>
               </div>
             </a>
