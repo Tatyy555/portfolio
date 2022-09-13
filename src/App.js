@@ -130,7 +130,7 @@ function App() {
                 href="https://www.youtube.com/playlist?list=PLJ86MSrhnFKVcfaffKPYkvfkPg4qRsijs"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                the YouYube by T.Umezawa
+                the YouTube by T.Umezawa
               </a>
             </li>
             <li>
