@@ -5,6 +5,7 @@ import rpgGame from "./images/rpg-game.png";
 import web3Wave from "./images/web3-wave-app.png";
 import nftDrop from "./images/nft-drop.png";
 import newsApp from "./images/news-app.png";
+import gwitter from "./images/gwitter.png";
 import {
   HomeIcon,
   ClockIcon,
@@ -197,6 +198,24 @@ function App() {
                 the YouTube by Sonny Sangha
               </a>
             </li>
+
+            <li>
+              <strong>Spt 2022</strong> -{" "}
+              <a
+                href="https://twitter-clone-tatyy555.vercel.app/"
+                className="underline hover:text-my-yellow hover:duration-300"
+              >
+                Gwitter
+              </a>{" "}
+              (JavaScript) with reference to{" "}
+              <a
+                href="https://www.youtube.com/watch?v=rCselwxbUgA"
+                className="underline hover:text-my-yellow hover:duration-300"
+              >
+                the YouTube by Sonny Sangha
+              </a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -342,6 +361,31 @@ function App() {
                 </div>
               </div>
             </a>
+
+            <a
+              href="https://twitter-clone-tatyy555.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105">
+                <div className="rounded-xl bg-mine p-2">
+                  <img
+                    className="h-60 w-60 rounded-2xl object-cover"
+                    src={gwitter}
+                    alt=""
+                  />
+                </div>
+                <div className="p-5">
+                  <h2 className="text-3xl">Gwitter</h2>
+                  <p className="mt-2 text-sm">
+                    Twitter-Clone with Green Color using JavaScript (First, sign in with Google Account)
+                  </p>
+                </div>
+              </div>
+            </a>
+
+
+
           </div>
         </div>
       </div>
