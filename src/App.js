@@ -172,7 +172,7 @@ function App() {
                 href="https://d-app-starter-project-phi-opal.vercel.app/"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                Web3 Wave App
+                "Web3 Wave App"
               </a>{" "}
               (JavaScript) with reference to the study material of{" "}
               <a
@@ -188,7 +188,7 @@ function App() {
                 href="https://nftdrop-challenge-flax.vercel.app/"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                NFT Drop App
+                "NFT Drop App"
               </a>{" "}
               (JavaScript) with reference to{" "}
               <a
@@ -205,7 +205,7 @@ function App() {
                 href="https://twitter-clone-tatyy555.vercel.app/"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                Gwitter
+                "Gwitter"
               </a>{" "}
               (JavaScript) with reference to{" "}
               <a
