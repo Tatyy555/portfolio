@@ -7,6 +7,7 @@ import nftDrop from "./images/nft-drop.png";
 import newsApp from "./images/news-app.png";
 import gwitter from "./images/gwitter.png";
 import web3NFTCollection from "./images/web3-nft-collection.png";
+import gooqle from "./images/google-clone.png";
 import {
   HomeIcon,
   ClockIcon,
@@ -71,6 +72,24 @@ function App() {
         <div className="max-w-7xl mx-auto flex-col min-h-screen flex py-20 px-10 2xl:px-0 bg-my-lightblue">
           <h1 className="mb-10 text-4xl underline font-extrabold">Timeline</h1>
           <ul className="p-10 shadow-xl shadow-blue-300/40 text-left leading-8  lg:text-xl lg:leading-loose bg-my-white">
+
+            <li>
+              <strong>Spt 2022</strong> -{" "}
+              <a
+                href="https://google-clone-tatyy555.vercel.app/"
+                className="underline hover:text-my-yellow hover:duration-300"
+              >
+                "Gooqle"
+              </a>{" "}
+              (JavaScript) with reference to{" "}
+              <a
+                href="https://www.youtube.com/watch?v=24xpTmaPOdY&t=2407s"
+                className="underline hover:text-my-yellow hover:duration-300"
+              >
+                the YouTube by Sonny Sangha
+              </a>
+            </li>
+
             <li>
               <strong>Spt 2022</strong> -{" "}
               <a
@@ -255,6 +274,32 @@ function App() {
 
         <div className="bg-slate-100 p-10 shadow-xl shadow-blue-300/40">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl::grid-cols-4">
+
+
+
+          <a
+              href="https://google-clone-tatyy555.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105">
+                <div className="rounded-xl bg-mine p-2">
+                  <img
+                    className="h-60 w-60 rounded-2xl object-cover"
+                    src={gooqle}
+                    alt=""
+                  />
+                </div>
+                <div className="p-5">
+                  <h2 className="text-3xl">Gooqle</h2>
+                  <p className="mt-2 text-sm">
+                    Google-clone using JavaScript (It shows "Google" for the result of search engine so as to reduce the cost currently)
+                  </p>
+                </div>
+              </div>
+            </a>
+
+
 
           <a
               href="https://nft-collection-starter-project-chi-orcin.vercel.app/"
