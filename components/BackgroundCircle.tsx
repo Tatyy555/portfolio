@@ -18,7 +18,7 @@ export default function BackgroundCircle({}: Props) {
       }}
       className="relative flex justify-center items-center"
     >
-      <div className="absolute border border-my-yellow h-[300px] w-[300px] rounded-full animate-pulse mt-40 md:mt-56 md:h-[500px] md:w-[500px]"></div>
+      <div className=" p-10 absolute border border-my-yellow h-[300px] w-[300px] rounded-full animate-pulse mt-40 md:mt-56 md:h-[500px] md:w-[500px]"></div>
     </motion.div>
   );
 }
