@@ -6,10 +6,10 @@ type Props = {};
 export default function BackgroundCircle({}: Props) {
   return (
     <motion.div
-    initial={{
-    scale:1.5,
-    opacity: 0,
-  }}
+      initial={{
+        scale: 1.5,
+        opacity: 0,
+      }}
       animate={{
         scale: 1,
         opacity: 1,
