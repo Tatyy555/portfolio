@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className="text-my-black">
       <Head>
-        <title>Portfolio-2.0</title>
+        <title>Portfolio 2.0</title>
       </Head>
 
       {/* ---Header--- */}
