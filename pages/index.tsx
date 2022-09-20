@@ -11,6 +11,10 @@ import {
 const Home: NextPage = () => {
   return (
     <div className="text-my-black">
+      <Head>
+        <title>Portfolio-2.0</title>
+      </Head>
+
       {/* ---Header--- */}
       <header>
         <nav className="flex fixed top-0 left-0 justify-evenly w-full bg-my-lightblue border-b-4 border-my-yellow md:justify-end z-20">
