@@ -5,6 +5,7 @@ import {
   BuildingLibraryIcon,
   ChatBubbleLeftRightIcon,
 } from "@heroicons/react/24/outline";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -12,6 +13,21 @@ export default function Header({}: Props) {
   return (
     <header>
       <nav className="flex fixed top-0 left-0 justify-evenly w-full bg-my-lightblue border-b-4 border-my-yellow md:justify-end z-20">
+      <motion.div
+        initial={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+      >
         <ul className="flex text-2xl">
           <a href="#welcome-section">
             <li className="p-4 hover:bg-my-skyblue rounded-3xl flex items-center space-x-2">
@@ -38,7 +54,9 @@ export default function Header({}: Props) {
             </li>
           </a>
         </ul>
+        </motion.div>
       </nav>
     </header>
+
   );
 }
