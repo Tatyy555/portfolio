@@ -19,7 +19,7 @@ export default function WelcomeSection({}: Props) {
   return (
     <div
       id="welcome-section"
-      className="flex flex-col text-center h-screen bg-mine justify-center"
+      className="flex flex-col text-center h-screen bg-mine justify-center w-screen"
     >
       <BackgroundCircle />
       <h1 className="text-white font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-Arial leading-relaxed lg:pb-8 lg:leading-loose z-20">
