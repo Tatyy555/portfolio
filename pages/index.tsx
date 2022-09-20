@@ -156,7 +156,7 @@ const Home: NextPage = () => {
                 href="https://www.freecodecamp.org/certification/TATYY/responsive-web-design"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                Certificate for "Responsive Web Design"
+                Certificate for &quot;Responsive Web Design&quot;
               </a>{" "}
               from{" "}
               <a
@@ -172,7 +172,7 @@ const Home: NextPage = () => {
                 href="https://www.freecodecamp.org/certification/TATYY/javascript-algorithms-and-data-structures"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                Certificate for "JavaScript Algorithms and Data Structure"
+                Certificate for &quot;JavaScript Algorithms and Data Structure&quot;
               </a>{" "}
               from{" "}
               <a
@@ -284,7 +284,7 @@ const Home: NextPage = () => {
                 <div className="p-5">
                   <h2 className="text-3xl">Gooqle</h2>
                   <p className="mt-2 text-sm">
-                    Google-clone using JavaScript (It shows "Google" for the
+                    Google-clone using JavaScript (It shows &quot;Google&quot; for the
                     result of search engine so as to reduce the cost currently)
                   </p>
                 </div>
@@ -495,7 +495,7 @@ const Home: NextPage = () => {
         className="flex flex-col text-center h-contact bg-my-lightblue justify-center"
       >
         <h2 className="text-2xl lg:text-4xl lg:mb-5 pb-3 lg:pb-5 px-6">
-          Please check the followings if you'd like to know more...
+          Please check the followings if you&apos;d like to know more...
         </h2>
         <div className="flex justify-center">
           <a
