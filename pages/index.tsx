@@ -52,7 +52,7 @@ const Home: NextPage = () => {
         <h1 className="text-white font-bold text-5xl lg:text-7xl font-Arial leading-relaxed lg:pb-8 lg:leading-loose">
           Nice to meet you!
           <br />
-          I'm Tatsuya Yamaguchi.
+          I&apos;m Tatsuya Yamaguchi.
         </h1>
         <p className="text-yellow-400 text-3xl italic lg:text-5xl font-bold font-Arial mt-2">
           a web developer
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
                 href="https://google-clone-tatyy555.vercel.app/"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                "Gooqle"
+                &quot;Gooqle&quot;
               </a>{" "}
               (JavaScript) with reference to{" "}
               <a
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
                 href="https://nft-collection-starter-project-chi-orcin.vercel.app/"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                "NFT Collection"
+                &quot;NFT Collection&quot;
               </a>{" "}
               (JavaScript) with reference to the study material of{" "}
               <a
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
                 href="https://twitter-clone-tatyy555.vercel.app/"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                "Gwitter"
+                &quot;Gwitter&quot;
               </a>{" "}
               (JavaScript) with reference to{" "}
               <a
@@ -122,7 +122,7 @@ const Home: NextPage = () => {
                 href="https://nftdrop-challenge-flax.vercel.app/"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                "NFT Drop App"
+                &quot;NFT Drop App&quot;
               </a>{" "}
               (JavaScript) with reference to{" "}
               <a
@@ -139,7 +139,7 @@ const Home: NextPage = () => {
                 href="https://d-app-starter-project-phi-opal.vercel.app/"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                "Web3 Wave App"
+                &quot;Web3 Wave App&quot;
               </a>{" "}
               (JavaScript) with reference to the study material of{" "}
               <a
@@ -189,7 +189,7 @@ const Home: NextPage = () => {
                 href="https://rpg-game-smoky.vercel.app/"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                "RPG Game"
+                &quot;RPG Game&quot;
               </a>{" "}
               (JavaScript) with reference to{" "}
               <a
@@ -206,7 +206,7 @@ const Home: NextPage = () => {
                 href="https://github.com/Tatyy555/first_project"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                "News Log App"
+                &quot;News Log App&quot;
               </a>{" "}
               (flutter) with reference to{" "}
               <a
@@ -223,7 +223,7 @@ const Home: NextPage = () => {
                 href="https://github.com/Tatyy555/auto-trading-system"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                "Auto Trading System"
+                &quot;Auto Trading System&quot;
               </a>{" "}
               (Python) with reference to{" "}
               <a
@@ -240,7 +240,7 @@ const Home: NextPage = () => {
                 href="https://github.com/Tatyy555/word-cloud"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                "Word Cloud Maker"
+                &quot;Word Cloud Maker&quot;
               </a>{" "}
               (Python) with reference to{" "}
               <a
