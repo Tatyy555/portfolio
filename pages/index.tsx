@@ -1,12 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import {
-  HomeIcon,
-  ClockIcon,
-  BuildingLibraryIcon,
-  ChatBubbleLeftRightIcon,
-} from "@heroicons/react/24/outline";
+import Header from "../components/Header";
+import WelcomeSection from "../components/WelcomeSection";
 
 const Home: NextPage = () => {
   return (
@@ -16,53 +12,10 @@ const Home: NextPage = () => {
       </Head>
 
       {/* ---Header--- */}
-      <header>
-        <nav className="flex fixed top-0 left-0 justify-evenly w-full bg-my-lightblue border-b-4 border-my-yellow md:justify-end z-20">
-          <ul className="flex text-2xl">
-            <a href="#welcome-section">
-              <li className="p-4 hover:bg-my-skyblue rounded-3xl flex items-center space-x-2">
-                <HomeIcon className="h-7 w-7" />
-                <p className="hidden md:inline-flex">Welcome</p>
-              </li>
-            </a>
-            <a href="#timeline-section">
-              <li className="p-4 hover:bg-my-skyblue rounded-3xl flex items-center space-x-2">
-                <ClockIcon className="h-7 w-7" />
-                <p className="hidden md:inline-flex">Timeline</p>
-              </li>
-            </a>
-            <a href="#project-section">
-              <li className="p-4 hover:bg-my-skyblue rounded-3xl flex items-center space-x-2">
-                <BuildingLibraryIcon className="h-7 w-7" />
-                <p className="hidden md:inline-flex">Libraries</p>
-              </li>
-            </a>
-            <a href="#contact-section">
-              <li className="p-4 hover:bg-my-skyblue rounded-3xl flex items-center space-x-2">
-                <ChatBubbleLeftRightIcon className="h-7 w-7" />
-                <p className="hidden md:inline-flex">Contact </p>
-              </li>
-            </a>
-          </ul>
-        </nav>
-      </header>
-      {/* ---Header--- */}
+      <Header />
 
       {/* ---Welcome Section--- */}
-      <div
-        id="welcome-section"
-        className="flex flex-col text-center h-screen bg-mine justify-center"
-      >
-        <h1 className="text-white font-bold text-5xl lg:text-7xl font-Arial leading-relaxed lg:pb-8 lg:leading-loose">
-          Nice to meet you!
-          <br />
-          I&apos;m Tatsuya Yamaguchi.
-        </h1>
-        <p className="text-yellow-400 text-3xl italic lg:text-5xl font-bold font-Arial mt-2">
-          a web developer
-        </p>
-      </div>
-      {/* ---Welcome Section--- */}
+      <WelcomeSection />
 
       {/* Timeline Section */}
       <div id="timeline-section" className="bg-my-lightblue">
@@ -176,7 +129,8 @@ const Home: NextPage = () => {
                 href="https://www.freecodecamp.org/certification/TATYY/javascript-algorithms-and-data-structures"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
-                Certificate for &quot;JavaScript Algorithms and Data Structure&quot;
+                Certificate for &quot;JavaScript Algorithms and Data
+                Structure&quot;
               </a>{" "}
               from{" "}
               <a
@@ -288,8 +242,9 @@ const Home: NextPage = () => {
                 <div className="p-5">
                   <h2 className="text-3xl">Gooqle</h2>
                   <p className="mt-2 text-sm">
-                    Google-clone using JavaScript (It shows &quot;Google&quot; for the
-                    result of search engine so as to reduce the cost currently)
+                    Google-clone using JavaScript (It shows &quot;Google&quot;
+                    for the result of search engine so as to reduce the cost
+                    currently)
                   </p>
                 </div>
               </div>
