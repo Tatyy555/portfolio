@@ -1,13 +1,6 @@
-import "./App.css";
-import wordCloud from "./images/word-cloud-maker.png";
-import autoTradingSystem from "./images/auto-trading-system.png";
-import rpgGame from "./images/rpg-game.png";
-import web3Wave from "./images/web3-wave-app.png";
-import nftDrop from "./images/nft-drop.png";
-import newsApp from "./images/news-app.png";
-import gwitter from "./images/gwitter.png";
-import web3NFTCollection from "./images/web3-nft-collection.png";
-import gooqle from "./images/google-clone.png";
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
 import {
   HomeIcon,
   ClockIcon,
@@ -15,12 +8,12 @@ import {
   ChatBubbleLeftRightIcon,
 } from "@heroicons/react/24/outline";
 
-function App() {
+const Home: NextPage = () => {
   return (
     <div className="text-my-black">
       {/* ---Header--- */}
       <header>
-        <nav className="flex fixed top-0 left-0 justify-evenly w-full bg-my-lightblue border-b-4 border-my-yellow md:justify-end">
+        <nav className="flex fixed top-0 left-0 justify-evenly w-full bg-my-lightblue border-b-4 border-my-yellow md:justify-end z-20">
           <ul className="flex text-2xl">
             <a href="#welcome-section">
               <li className="p-4 hover:bg-my-skyblue rounded-3xl flex items-center space-x-2">
@@ -72,7 +65,6 @@ function App() {
         <div className="max-w-7xl mx-auto flex-col min-h-screen flex py-20 px-10 2xl:px-0 bg-my-lightblue">
           <h1 className="mb-10 text-4xl underline font-extrabold">Timeline</h1>
           <ul className="p-10 shadow-xl shadow-blue-300/40 text-left leading-8  lg:text-xl lg:leading-loose bg-my-white">
-
             <li>
               <strong>Spt 2022</strong> -{" "}
               <a
@@ -274,58 +266,55 @@ function App() {
 
         <div className="bg-slate-100 p-10 shadow-xl shadow-blue-300/40">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl::grid-cols-4">
-
-
-
-          <a
+            <a
               href="https://google-clone-tatyy555.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105">
                 <div className="rounded-xl bg-mine p-2">
-                  <img
+                  <Image
                     className="h-60 w-60 rounded-2xl object-cover"
-                    src={gooqle}
+                    src="/images/google-clone.png"
                     alt=""
+                    height={200}
+                    width={200}
                   />
                 </div>
                 <div className="p-5">
                   <h2 className="text-3xl">Gooqle</h2>
                   <p className="mt-2 text-sm">
-                    Google-clone using JavaScript (It shows "Google" for the result of search engine so as to reduce the cost currently)
+                    Google-clone using JavaScript (It shows "Google" for the
+                    result of search engine so as to reduce the cost currently)
                   </p>
                 </div>
               </div>
             </a>
 
-
-
-          <a
+            <a
               href="https://nft-collection-starter-project-chi-orcin.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105">
                 <div className="rounded-xl bg-mine p-2">
-                  <img
+                  <Image
                     className="h-60 w-60 rounded-2xl object-cover"
-                    src={web3NFTCollection}
+                    src="/images/web3-nft-collection.png"
                     alt=""
+                    height={200}
+                    width={200}
                   />
                 </div>
                 <div className="p-5">
                   <h2 className="text-3xl">NFT Collection</h2>
                   <p className="mt-2 text-sm">
-                    Web3 App for getting an orginal NFT with three words of vehicle using Goerli Testnet
+                    Web3 App for getting an orginal NFT with three words of
+                    vehicle using Goerli Testnet
                   </p>
                 </div>
               </div>
             </a>
-
-
-
-
 
             <a
               href="https://twitter-clone-tatyy555.vercel.app/"
@@ -334,10 +323,12 @@ function App() {
             >
               <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105">
                 <div className="rounded-xl bg-mine p-2">
-                  <img
+                  <Image
+                    src="/images/gwitter.png"
                     className="h-60 w-60 rounded-2xl object-cover"
-                    src={gwitter}
                     alt=""
+                    height={200}
+                    width={200}
                   />
                 </div>
                 <div className="p-5">
@@ -357,10 +348,12 @@ function App() {
             >
               <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105">
                 <div className="rounded-xl bg-mine p-2">
-                  <img
+                  <Image
                     className="h-60 w-60 rounded-2xl object-cover"
-                    src={nftDrop}
+                    src="/images/nft-drop.png"
                     alt=""
+                    height={200}
+                    width={200}
                   />
                 </div>
                 <div className="p-5">
@@ -379,10 +372,12 @@ function App() {
             >
               <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105">
                 <div className="rounded-xl bg-mine p-2">
-                  <img
+                  <Image
                     className="h-60 w-60 rounded-2xl object-cover"
-                    src={web3Wave}
+                    src="/images/web3-wave-app.png"
                     alt=""
+                    height={200}
+                    width={200}
                   />
                 </div>
                 <div className="p-5">
@@ -401,10 +396,12 @@ function App() {
             >
               <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105">
                 <div className="rounded-xl bg-mine p-2">
-                  <img
+                  <Image
                     className="h-60 w-60 rounded-2xl object-cover"
-                    src={rpgGame}
+                    src="/images/rpg-game.png"
                     alt=""
+                    height={200}
+                    width={200}
                   />
                 </div>
                 <div className="p-5">
@@ -423,10 +420,12 @@ function App() {
             >
               <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105">
                 <div className="rounded-xl bg-mine p-2">
-                  <img
+                  <Image
                     className="h-60 w-60 rounded-2xl object-cover"
-                    src={newsApp}
+                    src="/images/news-app.png"
                     alt=""
+                    height={200}
+                    width={200}
                   />
                 </div>
                 <div className="p-5">
@@ -445,10 +444,12 @@ function App() {
             >
               <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105">
                 <div className="rounded-xl bg-mine p-2">
-                  <img
+                  <Image
                     className="h-60 w-60 rounded-2xl object-cover"
-                    src={autoTradingSystem}
+                    src="/images/auto-trading-system.png"
                     alt=""
+                    height={200}
+                    width={200}
                   />
                 </div>
                 <div className="p-5">
@@ -467,10 +468,12 @@ function App() {
             >
               <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105">
                 <div className="rounded-xl bg-mine p-2">
-                  <img
+                  <Image
                     className="h-60 w-60 rounded-2xl object-cover"
-                    src={wordCloud}
+                    src="/images/word-cloud-maker.png"
                     alt=""
+                    height={200}
+                    width={200}
                   />
                 </div>
                 <div className="p-5">
@@ -525,6 +528,6 @@ function App() {
       {/* ---Footer Section--- */}
     </div>
   );
-}
+};
 
-export default App;
+export default Home;
