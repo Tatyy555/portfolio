@@ -16,9 +16,9 @@ export default function BackgroundCircle({}: Props) {
       transition={{
         duration: 1,
       }}
-      className="relative flex justify-center items-center"
+      className="p-10 relative flex justify-center items-center"
     >
-      <div className=" p-10 absolute border border-my-yellow h-[300px] w-[300px] rounded-full animate-pulse mt-40 md:mt-56 md:h-[500px] md:w-[500px]"></div>
+      <div className="absolute border border-my-yellow h-[300px] w-[300px] rounded-full animate-pulse mt-40 md:mt-56 md:h-[500px] md:w-[500px]"></div>
     </motion.div>
   );
 }
