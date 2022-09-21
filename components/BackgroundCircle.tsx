@@ -10,16 +10,15 @@ export default function BackgroundCircle({}: Props) {
         opacity: 0,
       }}
       animate={{
-        scale: [1,2,2,3,1],
-        opacity:[0.1,0.2,0.4,0.8,0.1,1.0],
-        borderRadius:["20%", "20%", "50%", "80%", "20%"],
+        opacity: [0.3, 0.5, 0.8, 0.5, 0.3],
+        borderRadius: ["10%", "50%", "50%", "10%"],
+        rotate: [0, 270, 0, 0, -270],
       }}
       transition={{
-        duration: 2.5,
+        duration: 4,
+        repeat: Infinity,
       }}
-      className="relative flex justify-center items-center"
-    >
-      <div className="absolute border border-my-yellow h-[300px] w-[300px] rounded-full animate-pulse mt-40 md:mt-56 md:h-[500px] md:w-[500px]"></div>
-    </motion.div>
+      className="absolute border border-my-yellow h-[300px] w-[300px] rounded-full md:mt-20 md:h-[500px] md:w-[500px]"
+    ></motion.div>
   );
 }
