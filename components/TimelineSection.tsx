@@ -28,7 +28,7 @@ export default function TimelineSection({}: Props) {
             <li>
               <strong>Spt 2022</strong> -{" "}
               <a
-                href="https://google-clone-tatyy555.vercel.app/"
+                href="https://google-clone-omega-sandy.vercel.app/"
                 className="underline hover:text-my-yellow hover:duration-300"
               >
                 &quot;Gooqle&quot;
