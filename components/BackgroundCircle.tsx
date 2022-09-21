@@ -18,7 +18,7 @@ export default function BackgroundCircle({}: Props) {
         duration: 4,
         repeat: Infinity,
       }}
-      className="absolute border border-my-yellow h-[300px] w-[300px] rounded-full md:mt-20 md:h-[500px] md:w-[500px]"
+      className="absolute border border-my-yellow h-[200px] w-[200px] rounded-full sm:h-[300px] sm:w-[300px] Infinity, md:mt-20 md:h-[500px] md:w-[500px]"
     ></motion.div>
   );
 }
