@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --main-white: #fffffe;
   --main-black: #272343;
@@ -15,18 +14,24 @@
   font-family: Arial Black, sans-serif;
 }
 
-.bg-mine{
+.bg-mine {
   background-image: linear-gradient(60deg, gray 0%, var(--main-black) 100%);
 }
 
-.h-footer{
-  height:10vh;
+.h-footer {
+  height: 10vh;
 }
 
-.h-contact{
-  height:90vh;
+.h-contact {
+  height: 90vh;
 }
 
-*{
+* {
   scroll-behavior: smooth;
+}
+
+@layer components {
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b-2 px-6 py-4 border-black text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-my-black hover:border-my-yellow/40;
+  }
 }
