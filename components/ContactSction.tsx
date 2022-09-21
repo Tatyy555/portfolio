@@ -40,7 +40,8 @@ export default function ContactSction({}: Props) {
         className="justify-center"
       >
         <h2 className="text-2xl mt-10 lg:mt-14 lg:text-3xl lg:mb-5 pb-3 lg:pb-5 px-6">
-          Please check the followings if you&apos;d like to know more or send me a message.
+          Please check the followings if you&apos;d like to know more or send me
+          a message.
         </h2>
         <div className="flex justify-center ">
           <a
@@ -63,7 +64,7 @@ export default function ContactSction({}: Props) {
           </a>
         </div>
 
-        <div className="my-10 space-y-2 mx-auto">
+        <div className="mb-5 mt-5 sm:my-10 space-y-2 mx-auto">
           <div className="flex item-center justify-center space-x-5">
             <EnvelopeIcon className="text-orange-400 h-7 w-7 animate-pulse" />
             <p className="text-2xl">tatsuya91yamaguchi@gmail.com</p>
@@ -72,19 +73,19 @@ export default function ContactSction({}: Props) {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 max-w-[90%] w-fit mx-auto"
         >
-          <div className="flex space-x-2">
+          <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
             <input
               {...register("name")}
               placeholder="Name"
-              className="contactInput"
+              className="contactInput py-1 sm:py-4"
               type="text"
             />
             <input
               {...register("email")}
               placeholder="Email"
-              className="contactInput"
+              className="contactInput py-1 sm:py-4"
               type="text"
             />
           </div>
