@@ -33,7 +33,7 @@ export default function ProjectSection({}: Props) {
         <div className="bg-slate-100 p-10 shadow-xl shadow-blue-300/40">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl::grid-cols-4">
             <a
-              href="https://google-clone-tatyy555.vercel.app/"
+              href="https://google-clone-omega-sandy.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
