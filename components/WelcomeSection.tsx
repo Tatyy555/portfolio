@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BackgroundCircle from "./BackgroundCircle";
@@ -21,14 +22,32 @@ export default function WelcomeSection({}: Props) {
       id="welcome-section"
       className="flex flex-col text-center h-screen bg-mine justify-center w-screen items-center"
     >
-      <BackgroundCircle />
-      <h1 className="text-white text-3xl md:font-bold sm:text-5xl md:text-6xl lg:text-7xl font-Arial leading-relaxed lg:pb-8 lg:leading-loose z-10">
-        <span className="mr-3 overflow-hidden text-ellipsis">{text}</span>
-        <Cursor cursorColor="#F7AB0A" />
-      </h1>
-      <p className="text-yellow-400 text-3xl italic lg:text-5xl font-bold font-Arial mt-2 z-10">
-        a web developer
-      </p>
+      <motion.div
+        initial={{
+          y: -20,
+          opacity: 0,
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 3,
+        }}
+        viewport={{
+          once: true,
+        }}
+        className=" flex flex-col items-center justify-center"
+      >
+        <BackgroundCircle />
+        <h1 className="text-white text-3xl md:font-bold sm:text-5xl md:text-6xl lg:text-7xl font-Arial leading-relaxed lg:pb-8 lg:leading-loose z-10">
+          <span className="mr-3 overflow-hidden text-ellipsis">{text}</span>
+          <Cursor cursorColor="#F7AB0A" />
+        </h1>
+        <p className="text-yellow-400 text-3xl italic lg:text-5xl font-bold font-Arial mt-2 z-10">
+          a web developer
+        </p>
+      </motion.div>
     </div>
   );
 }
