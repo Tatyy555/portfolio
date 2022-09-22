@@ -37,16 +37,19 @@ export default function WelcomeSection({}: Props) {
         viewport={{
           once: true,
         }}
-        className=" flex flex-col items-center justify-center"
+        className=" flex items-center justify-center relative"
       >
         <BackgroundCircle />
-        <h1 className="text-white text-3xl md:font-bold sm:text-5xl md:text-6xl lg:text-7xl font-Arial leading-relaxed lg:pb-8 lg:leading-loose z-10">
-          <span className="mr-3 overflow-hidden text-ellipsis">{text}</span>
-          <Cursor cursorColor="#F7AB0A" />
-        </h1>
-        <p className="text-yellow-400 text-3xl italic lg:text-5xl font-bold font-Arial mt-2 z-10">
-          a web developer
-        </p>
+        <div className="absolute flex flex-col w-screen ">
+          <h1 className=" text-white text-3xl md:font-bold sm:text-5xl md:text-6xl lg:text-7xl font-Arial leading-relaxed lg:pb-8 lg:leading-loose z-10 ">
+            <span className="mr-3 overflow-hidden text-ellipsis">{text}</span>
+            <Cursor cursorColor="#F7AB0A" />
+          </h1>
+          <p className="text-yellow-400 text-3xl italic lg:text-5xl font-bold font-Arial mt-2 z-10">
+            a web developer
+          </p>
+        </div>
+        <div className="w-screen absolute  bg-my-yellow/10  h-[400px] -skew-y-12"></div>
       </motion.div>
     </div>
   );

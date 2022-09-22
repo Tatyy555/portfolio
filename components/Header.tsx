@@ -12,7 +12,7 @@ type Props = {};
 export default function Header({}: Props) {
   return (
     <header>
-      <nav className="flex fixed top-0 left-0 justify-evenly w-full bg-my-lightblue border-b-4 border-my-yellow md:justify-end z-20">
+      <nav className="px-5 flex fixed top-0 left-0 justify-evenly w-full bg-my-lightblue border-b-4 border-my-yellow md:justify-end z-10">
         <motion.div
           initial={{
             x: 500,
