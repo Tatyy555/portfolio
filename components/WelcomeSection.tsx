@@ -20,7 +20,7 @@ export default function WelcomeSection({}: Props) {
   return (
     <div
       id="welcome-section"
-      className="flex flex-col text-center h-screen bg-mine justify-center w-screen items-center"
+      className="flex flex-col text-center h-screen bg-mine justify-center w-screen items-center  z-0"
     >
       <motion.div
         initial={{
@@ -37,15 +37,15 @@ export default function WelcomeSection({}: Props) {
         viewport={{
           once: true,
         }}
-        className=" flex items-center justify-center relative"
+        className=" flex items-center justify-center relative "
       >
         <BackgroundCircle />
         <div className="absolute flex flex-col w-screen ">
-          <h1 className=" text-white text-3xl md:font-bold sm:text-5xl md:text-6xl lg:text-7xl font-Arial leading-relaxed lg:pb-8 lg:leading-loose z-10 ">
+          <h1 className=" text-white text-3xl md:font-bold sm:text-5xl md:text-6xl lg:text-7xl font-Arial leading-relaxed lg:pb-8 lg:leading-loose">
             <span className="mr-3 overflow-hidden text-ellipsis">{text}</span>
             <Cursor cursorColor="#F7AB0A" />
           </h1>
-          <p className="text-yellow-400 text-3xl italic lg:text-5xl font-bold font-Arial mt-2 z-10">
+          <p className="text-yellow-400 text-3xl italic lg:text-5xl font-bold font-Arial mt-2">
             a web developer
           </p>
         </div>

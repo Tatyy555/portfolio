@@ -9,7 +9,7 @@ import WelcomeSection from "../components/WelcomeSection";
 
 const Home: NextPage = () => {
   return (
-    <div className=" h-screen text-my-black  scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 z-20">
+    <div className=" h-screen text-my-black  scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 z-30">
     {/* // <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"> */}
       <Head>
         <title>Portfolio 2.0</title>
