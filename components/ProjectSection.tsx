@@ -66,7 +66,7 @@ export default function ProjectSection({ projects }: Props) {
                     <span className=" underline decoration-yellow-300/50 ">
                       Case {1 + i} of {projects?.length}
                     </span>{" "}
-                    <h4>{project?.title}</h4>
+                    <p>{project?.title}</p>
                   </h4>
                   <div className="flex items-center justify-center mt-4 mb-2 lg:mt-10 lg:mb-5 w-fit space-x-2 mx-auto">
                     {project?.technologies.map((technology) => (
