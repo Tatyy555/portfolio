@@ -1,14 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Project } from "../typing";
+import { urlFor } from "../sanity";
 
-type Props = {};
+type Props = {
+  projects: Project[];
+};
 
-export default function ProjectSection({}: Props) {
+export default function ProjectSection({ projects }: Props) {
   return (
     <div
       id="project-section"
-      className="max-w-7xl mx-auto flex-col min-h-screen flex py-20 px-10 2xl:px-0 bg-my-white"
+      className="max-w-7xl mx-auto flex-col min-h-screen flex py-20 px-10 2xl:px-0 bg-my-white "
     >
       <motion.div
         initial={{
@@ -30,9 +34,46 @@ export default function ProjectSection({}: Props) {
           Library of My Works
         </h1>
 
-        <div className="bg-slate-100 p-10 shadow-xl shadow-blue-300/40">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl::grid-cols-4">
-            <a
+        <div className="bg-my-skyblue/30 mx-auto h-[75vh]  shadow-xl shadow-blue-300/40  overflow-x-scroll overflow-y-hidden  scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-300 items-center flex snap-x snam-mandatory">
+          {projects.map((project, i) => (
+            <div className=" w-full h-full flex-shrink-0 snap-center  flex flex-col  space-y-5 items-center justify-center p-20">
+              <motion.div
+                initial={{ y: -30, opacity: 0 }}
+                transition={{ duration: 1 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <div className="rounded-xl bg-mine p-2">
+                  <img
+                    src={urlFor(project.image).url()}
+                    className="top-20 h-[150px] md:h-[170px] lg:h-[250px]"
+                  />{" "}
+                </div>
+              </motion.div>
+              <div className="space-y-5 px-0 md:px-10 md:space-y-10 max-w-6xl">
+                <h4 className="text-3xl md:text-4xl font-semibold text-center">
+                  <span className=" underline decoration-yellow-300/50">
+                    Case {1 + i} of {projects.length}
+                  </span>{" "}
+                  {project?.title}
+                </h4>
+                <div className="flex items-center space-x-2 justify-center">
+                  {project?.technologies.map((technology) => (
+                    <img
+                      className="h-10 w-10 object-cover rounded-full"
+                      key={technology._id}
+                      src={urlFor(technology.image).url()}
+                    />
+                  ))}
+                </div>
+                <p className="text-lg text-center md:text-left">
+                  {project?.summary}
+                </p>
+              </div>
+            </div>
+          ))}
+
+          {/* <a
               href="https://google-clone-omega-sandy.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -250,8 +291,7 @@ export default function ProjectSection({}: Props) {
                   </p>
                 </div>
               </div>
-            </a>
-          </div>
+            </a> */}
         </div>
       </motion.div>
     </div>
