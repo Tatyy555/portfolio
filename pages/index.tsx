@@ -10,14 +10,13 @@ import { Project } from "../typing";
 import { fetchProjects } from "../utils/fetchProjects";
 
 type Props = {
-  projects: Project[],
-}
+  projects: Project[];
+};
 
-
-const Home = ({projects} : Props) => {
+const Home = ({ projects }: Props) => {
   return (
     <div className=" h-screen text-my-black  scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 z-30">
-    {/* // <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"> */}
+      {/* // <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"> */}
       <Head>
         <title>Portfolio 2.0</title>
       </Head>
@@ -32,22 +31,20 @@ const Home = ({projects} : Props) => {
       <TimelineSection />
 
       {/* ---Project Section--- */}
-      <ProjectSection projects={projects}/>
+      <ProjectSection projects={projects} />
 
       {/* ---Contact Section--- */}
       <ContactSction />
-      
+
       {/* ---Footer Section--- */}
       <Footer />
-
     </div>
   );
 };
 
 export default Home;
 
-
-export const getStaticProps:GetStaticProps<Props> = async () =>{
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const projects: Project[] = await fetchProjects();
 
   return {
@@ -56,6 +53,4 @@ export const getStaticProps:GetStaticProps<Props> = async () =>{
     },
     revalidate: 10,
   };
-}
-
-
+};
