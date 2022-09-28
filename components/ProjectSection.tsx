@@ -39,7 +39,7 @@ export default function ProjectSection({ projects }: Props) {
           {projects.map((project, i) => (
             <div
               key={project?._id}
-              className=" w-full h-full flex-shrink-0 snap-center flex flex-col items-center justify-center   0 p-5 lg:space-x-20 "
+              className="max-w-full h-full flex-shrink-0 snap-center flex flex-col items-center justify-center p-5 lg:space-x-20 "
             >
               <div className="border-4 border-my-skyblue p-5 h-[99%] w-[90%] flex flex-col items-center lg:grid lg:grid-cols-10 lg:flex-row ">
                 {/* // Left */}

@@ -24,7 +24,7 @@ export default function TimelineSection({}: Props) {
           }}
         >
           <h1 className="mb-10 text-4xl underline font-extrabold">Timeline</h1>
-          <ul className="p-10 shadow-xl shadow-blue-300/40 text-left leading-8  lg:text-xl lg:leading-loose bg-my-white">
+          <ul className="p-10 shadow-xl shadow-blue-300/40 text-left leading-8  lg:text-xl lg:leading-loose bg-my-white ">
             <li>
               <strong>Spt 2022</strong> -{" "}
               <a
