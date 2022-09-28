@@ -63,9 +63,9 @@ export default function ProjectSection({ projects }: Props) {
                 {/* Right */}
                 <div className="max-w-[450px] lg:col-span-5 lg:mx-auto">
                   <h4 className="text-3xl md:text-4xl font-semibold text-center lg:space-y-10">
-                    <span className=" underline decoration-yellow-300/50 ">
+                    <p className=" underline decoration-yellow-300/50 ">
                       Case {1 + i} of {projects?.length}
-                    </span>{" "}
+                    </p>{" "}
                     <p>{project?.title}</p>
                   </h4>
                   <div className="flex items-center justify-center mt-4 mb-2 lg:mt-10 lg:mb-5 w-fit space-x-2 mx-auto">
@@ -74,7 +74,7 @@ export default function ProjectSection({ projects }: Props) {
                         <Image
                           height={40}
                           width={40}
-                          className="object-cover rounded-full"
+                          className="object-cover rounded-full bg-my-white"
                           src={urlFor(technology?.image).url()}
                         />
                       </div>
