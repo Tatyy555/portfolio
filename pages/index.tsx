@@ -31,11 +31,11 @@ const Home = ({ projects, skills }: Props) => {
       {/* ---Welcome Section--- */}
       <WelcomeSection skills={skills} />
 
-      {/* Timeline Section */}
-      <TimelineSection />
-
       {/* ---Project Section--- */}
       <ProjectSection projects={projects} />
+
+      {/* Timeline Section */}
+      <TimelineSection />
 
       {/* ---Contact Section--- */}
       <ContactSction />
