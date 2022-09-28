@@ -74,7 +74,7 @@ export default function ProjectSection({ projects }: Props) {
                         <Image
                           height={40}
                           width={40}
-                          className="object-cover rounded-full bg-my-white"
+                          className="object-contain rounded-full bg-my-white"
                           src={urlFor(technology?.image).url()}
                         />
                       </div>

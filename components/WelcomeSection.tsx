@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { urlFor } from "../sanity";
+import { Skill } from "../typing";
 import BackgroundCircle from "./BackgroundCircle";
+import Image from "next/image";
 
-type Props = {};
+type Props = {
+  skills: Skill[];
+};
 
-export default function WelcomeSection({}: Props) {
+export default function WelcomeSection({ skills }: Props) {
   const [text] = useTypewriter({
     words: [
       "Nice to meet you!",
@@ -48,6 +53,18 @@ export default function WelcomeSection({}: Props) {
           <p className="text-yellow-400 text-3xl italic lg:text-5xl font-bold font-Arial mt-2">
             a web developer
           </p>
+          {/* <div className="mt-3 flex space-x-2 flex-wrap max-w-xs sm:max-w-sm mx-auto justify-center">
+          {skills?.map((skill) => (
+            <div key={skill?._id} >
+              <Image
+                height={40}
+                width={40}
+                className="object-contain rounded-full bg-my-white"
+                src={urlFor(skill?.image).url()}
+              />
+            </div>
+          ))}
+          </div> */}
         </div>
         <div className="w-screen absolute  bg-my-yellow/10  h-[400px] -skew-y-12"></div>
       </motion.div>

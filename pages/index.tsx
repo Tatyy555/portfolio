@@ -28,7 +28,7 @@ const Home = ({projects, skills} : Props) => {
       <Header />
 
       {/* ---Welcome Section--- */}
-      <WelcomeSection />
+      <WelcomeSection skills={skills}/>
 
       {/* Timeline Section */}
       <TimelineSection />
