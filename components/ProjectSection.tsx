@@ -51,7 +51,7 @@ export default function ProjectSection({ projects }: Props) {
                   viewport={{ once: true }}
                   className="justify-center items-center object-center lg:col-span-5 lg:mx-auto  max-w-[400px] "
                 >
-                  <Link href={project?.linkToBuild}>
+                  <Link href={project?.linkToBuild} target="_blank">
                   <div className="rounded-xl bg-mine p-2 transition-all duration-200 hover:scale-105 cursor-pointer">
                     <Image
                       src={urlFor(project?.image).url()}
