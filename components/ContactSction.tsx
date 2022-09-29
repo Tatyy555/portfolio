@@ -20,7 +20,7 @@ export default function ContactSction({}: Props) {
   return (
     <div
       id="contact-section"
-      className="flex flex-col text-center h-[90vh] bg-my-white justify-center"
+      className="flex flex-col text-center h-[90vh] bg-my-white justify-center snap-start"
     >
       <motion.div
         initial={{

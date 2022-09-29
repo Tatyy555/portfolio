@@ -25,7 +25,7 @@ export default function WelcomeSection({ skills }: Props) {
   return (
     <div
       id="welcome-section"
-      className="flex flex-col text-center h-screen bg-mine justify-center w-screen items-center  z-0"
+      className="flex flex-col text-center h-screen bg-mine justify-center w-screen items-center  z-0 snap-center"
     >
       <motion.div
         initial={{

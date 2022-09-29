@@ -11,85 +11,61 @@ type Props = {
 
 export default function ProjectSection({ projects }: Props) {
   return (
-    <div
+    <motion.div
+      initial={{
+        y: -20,
+        opacity: 0,
+      }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
+      viewport={{
+        once: true,
+      }}
       id="project-section"
-      className="max-w-7xl mx-auto h-screen flex flex-col pt-20 px-10 2xl:px-0 bg-my-white "
+      className="max-w-7xl mx-auto flex-col max-h-screen flex py-20 px-10 2xl:px-0 bg-my-white snap-center"
     >
-      <motion.div
-        initial={{
-          y: -20,
-          opacity: 0,
-        }}
-        whileInView={{
-          y: 0,
-          opacity: 1,
-        }}
-        transition={{
-          duration: 1,
-        }}
-        viewport={{
-          once: true,
-        }}
-        className="flex flex-col h-[95%]"
-      >
-        <h1 className=" text-4xl underline font-extrabold h-[10%]">
-          Library of My Works
-        </h1>
+      <h1 className="mb-10 text-4xl underline font-extrabold">
+        Library of My Works
+      </h1>
 
-        <div className="bg-my-skyblue/30 shadow-xl shadow-blue-300/40  overflow-x-scroll overflow-y-hidden  scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-300 items-center flex snap-x snap-mandatory h-[90%]">
+      <div className="bg-slate-100 p-10 shadow-xl shadow-blue-300/40 overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-300">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl::grid-cols-4">
           {projects.map((project, i) => (
-            <div
+            <Link
               key={project?._id}
-              className="max-w-full h-full flex-shrink-0 snap-center flex flex-col items-center justify-center p-5 lg:space-x-20 "
+              href={project?.linkToBuild}
+              target="_blank"
             >
-              <div className="border-4 border-my-skyblue p-5 h-[99%] w-[90%] flex flex-col items-center lg:grid lg:grid-cols-10 lg:flex-row  lg:space-x-4">
-                {/* // Left */}
+              <div className="flex flex-col cursor-pointer items-center transition-all duration-200 hover:scale-105 pt-5 bg-my-skyblue/20 m-5 rounded-lg">
                 <motion.div
                   initial={{ y: -30, opacity: 0 }}
                   transition={{ duration: 1 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="justify-center items-center object-center lg:col-span-5 lg:mx-auto  max-w-[400px] "
+                  className="rounded-xl bg-mine p-2"
                 >
-                  <Link href={project?.linkToBuild} target="_blank">
-                  <div className="rounded-xl bg-mine p-2 transition-all duration-200 hover:scale-105 cursor-pointer">
-                    <Image
-                      src={urlFor(project?.image).url()}
-                      height={500}
-                      width={700}
-                      objectFit="contain"
-                      className=""
-                    />{" "}
-                  </div>
-                  </Link>
+                  <Image
+                    className="h-60 w-60 rounded-2xl object-cover"
+                    src={urlFor(project?.image).url()}
+                    alt={project?.title}
+                    height={250}
+                    width={250}
+                  />
                 </motion.div>
-                {/* Right */}
-                <div className="max-w-[450px] lg:col-span-5 lg:mx-auto">
-                  <h4 className="text-3xl md:text-4xl font-semibold text-center lg:space-y-10">
-                    <p className=" underline decoration-yellow-300/50 ">
-                      Case {1 + i} of {projects?.length}
-                    </p>{" "}
-                    <p>{project?.title}</p>
-                  </h4>
-                  <div className="flex items-center justify-center mt-4 mb-2 lg:mt-10 lg:mb-5 w-fit space-x-2 mx-auto">
-                    {project?.technologies.map((technology) => (
-                      <div key={technology?._id}>
-                        <Image
-                          height={40}
-                          width={40}
-                          className="object-contain rounded-full bg-my-white"
-                          src={urlFor(technology?.image).url()}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                  <p className="text-lg text-center">{project?.summary}</p>
+                <div className="p-5">
+                  <h2 className="text-3xl ">{project?.title}</h2>
+                  <p className="mt-2 text-sm ">{project?.summary}</p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   );
 }
