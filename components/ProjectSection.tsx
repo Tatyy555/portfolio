@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Project } from "../typing";
 import { urlFor } from "../sanity";
+import Link from "next/link";
 
 type Props = {
   projects: Project[];
@@ -41,16 +42,17 @@ export default function ProjectSection({ projects }: Props) {
               key={project?._id}
               className="max-w-full h-full flex-shrink-0 snap-center flex flex-col items-center justify-center p-5 lg:space-x-20 "
             >
-              <div className="border-4 border-my-skyblue p-5 h-[99%] w-[90%] flex flex-col items-center lg:grid lg:grid-cols-10 lg:flex-row ">
+              <div className="border-4 border-my-skyblue p-5 h-[99%] w-[90%] flex flex-col items-center lg:grid lg:grid-cols-10 lg:flex-row  lg:space-x-4">
                 {/* // Left */}
                 <motion.div
                   initial={{ y: -30, opacity: 0 }}
                   transition={{ duration: 1 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="justify-center items-center object-center lg:col-span-5 lg:mx-auto  max-w-[400px]"
+                  className="justify-center items-center object-center lg:col-span-5 lg:mx-auto  max-w-[400px] "
                 >
-                  <div className="rounded-xl bg-mine p-2">
+                  <Link href={project?.linkToBuild} target="_blank">
+                  <div className="rounded-xl bg-mine p-2 transition-all duration-200 hover:scale-105 cursor-pointer">
                     <Image
                       src={urlFor(project?.image).url()}
                       height={500}
@@ -59,6 +61,7 @@ export default function ProjectSection({ projects }: Props) {
                       className=""
                     />{" "}
                   </div>
+                  </Link>
                 </motion.div>
                 {/* Right */}
                 <div className="max-w-[450px] lg:col-span-5 lg:mx-auto">
