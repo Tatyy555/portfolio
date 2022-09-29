@@ -21,10 +21,10 @@ export default function TimelineSection({}: Props) {
         viewport={{
           once: true,
         }}
-        className="max-h-screen max-w-7xl mx-auto flex-col min-h-screen flex py-20 px-10 2xl:px-0 bg-my-lightblue "
+        className="sm:max-h-screen max-w-7xl mx-auto flex-col min-h-screen flex py-20 px-10 2xl:px-0 bg-my-lightblue "
       >
         <h1 className="mb-10 text-4xl underline font-extrabold">Timeline</h1>
-        <ul className="p-10 shadow-xl shadow-blue-300/40 text-left leading-8  lg:text-xl lg:leading-loose bg-my-white overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-300">
+        <ul className="p-10 shadow-xl shadow-blue-300/40 text-left leading-8  lg:text-xl lg:leading-loose bg-my-white sm:overflow-y-scroll sm:scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-300">
         <li>
             <strong>Spt 2022</strong> -{" "}
             <a
