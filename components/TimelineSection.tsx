@@ -33,7 +33,7 @@ export default function TimelineSection({}: Props) {
             >
               &quot;Web3 Game&quot;
             </a>{" "}
-            (JavaScript & Solidity) wwith reference to the study material of{" "}
+            (JavaScript & Solidity) with reference to the study material of{" "}
             <a
               href="https://www.unchain.tech/"
               className="underline hover:text-my-yellow hover:duration-300"
