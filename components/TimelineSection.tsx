@@ -67,7 +67,7 @@ export default function TimelineSection({}: Props) {
             >
               &quot;NFT Collection&quot;
             </a>{" "}
-            (JavaScript) with reference to the study material of{" "}
+            (JavaScript & Solidity) with reference to the study material of{" "}
             <a
               href="https://www.unchain.tech/"
               className="underline hover:text-my-yellow hover:duration-300"
@@ -84,7 +84,7 @@ export default function TimelineSection({}: Props) {
             >
               &quot;Gwitter&quot;
             </a>{" "}
-            (JavaScript) with reference to{" "}
+            (JavaScript & Sanity) with reference to{" "}
             <a
               href="https://www.youtube.com/watch?v=rCselwxbUgA"
               className="underline hover:text-my-yellow hover:duration-300"
@@ -101,7 +101,7 @@ export default function TimelineSection({}: Props) {
             >
               &quot;NFT Drop App&quot;
             </a>{" "}
-            (JavaScript) with reference to{" "}
+            (JavaScript & thirdweb) with reference to{" "}
             <a
               href="https://www.youtube.com/watch?v=B1pnHVdnN64&list=PLf16UKl7nR5Avl7PYcU42nt1iz36lxLeU"
               className="underline hover:text-my-yellow hover:duration-300"
@@ -118,7 +118,7 @@ export default function TimelineSection({}: Props) {
             >
               &quot;Web3 Wave App&quot;
             </a>{" "}
-            (JavaScript) with reference to the study material of{" "}
+            (JavaScript & Solidity) with reference to the study material of{" "}
             <a
               href="https://www.unchain.tech/"
               className="underline hover:text-my-yellow hover:duration-300"
