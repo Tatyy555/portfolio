@@ -68,7 +68,7 @@ const skillsQuery = groq`
 `;
 
 const projectsQuery = groq`
-  *[_type == "project"]| order(_createdAt desc){
+  *[_type == "project"]| order(orderNumber desc){
   ...,
   technologies[]->
 }
