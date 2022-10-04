@@ -33,5 +33,6 @@ export interface Project extends SanityBody{
   image:Image;
   linkToBuild:string;
   summary:string;
+  oriderNumber:number;
   technologies:Technology[];
 }

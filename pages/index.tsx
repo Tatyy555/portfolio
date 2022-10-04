@@ -68,10 +68,10 @@ const skillsQuery = groq`
 `;
 
 const projectsQuery = groq`
-  *[_type == "project"]{
-    ...,
-    technologies[]->
-  }
+  *[_type == "project"]| order(_createdAt desc){
+  ...,
+  technologies[]->
+}
 `;
 
 export async function getStaticProps() {
