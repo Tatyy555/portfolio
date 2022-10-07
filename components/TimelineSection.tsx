@@ -28,6 +28,24 @@ export default function TimelineSection({}: Props) {
         <li>
             <strong>Oct 2022</strong> -{" "}
             <a
+              href="https://github.com/Tatyy555/tracker-leads"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              &quot;Tracker Leads&quot;
+            </a>{" "}
+            (JavaScript) with reference to{" "}
+            <a
+              href="https://scrimba.com/learn/learnjavascript"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              scrimba by Per Harald Borgen
+            </a>
+          </li>
+        
+        
+        <li>
+            <strong>Oct 2022</strong> -{" "}
+            <a
               href="https://unit-conversion-psi.vercel.app/"
               className="underline hover:text-my-yellow hover:duration-300"
             >
