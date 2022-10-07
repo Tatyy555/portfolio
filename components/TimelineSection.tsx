@@ -28,6 +28,23 @@ export default function TimelineSection({}: Props) {
         <li>
             <strong>Oct 2022</strong> -{" "}
             <a
+              href="https://unit-conversion-psi.vercel.app/"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              &quot;Unit Convertor&quot;
+            </a>{" "}
+            (JavaScript) with reference to{" "}
+            <a
+              href="https://scrimba.com/learn/learnjavascript"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              scrimba by Per Harald Borgen
+            </a>
+          </li>
+
+        <li>
+            <strong>Oct 2022</strong> -{" "}
+            <a
               href="https://password-generator-mu-steel.vercel.app/"
               className="underline hover:text-my-yellow hover:duration-300"
             >
