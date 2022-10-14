@@ -14,7 +14,8 @@ export default function WelcomeSection({ skills }: Props) {
   const [text] = useTypewriter({
     words: [
       "Nice to meet you!",
-      "I'm Tatsuya Yamaguchi",
+      "Thank you for visiting.",
+      "I'm Tatsuya Yamaguchi.",
       "Guy-who-loves-Manga.tsx",
       "<ButLovesToCodeMore />",
     ],
