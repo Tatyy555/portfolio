@@ -29,6 +29,24 @@ export default function TimelineSection({}: Props) {
         <li>
             <strong>Oct 2022</strong> -{" "}
             <a
+              href="https://drum-machine-9hacy7g2p-tatyy555.vercel.app/"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              &quot;Drum Machine&quot;
+            </a>{" "}
+            (JavaScript) with reference to{" "}
+            <a
+              href="https://www.freecodecamp.org/learn/"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              freeCodeCamp.org
+            </a>
+          </li>
+
+
+        <li>
+            <strong>Oct 2022</strong> -{" "}
+            <a
               href="https://markdown-previewer-henna.vercel.app/"
               className="underline hover:text-my-yellow hover:duration-300"
             >
