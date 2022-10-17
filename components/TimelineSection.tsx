@@ -25,8 +25,41 @@ export default function TimelineSection({}: Props) {
       >
         <h1 className="mb-10 text-4xl underline font-extrabold">Timeline</h1>
         <ul className="p-10 shadow-xl shadow-blue-300/40 text-left leading-8  lg:text-xl lg:leading-loose bg-my-white sm:overflow-y-scroll sm:scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-300">
+          <li>
+            <strong>Oct 2022</strong> -{" "}
+            <a
+              href="https://www.freecodecamp.org/certification/TATYY/front-end-development-libraries"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              Certificate for &quot;Front End Development Libraries&quot;
+            </a>{" "}
+            from{" "}
+            <a
+              href="https://www.freecodecamp.org/learn/"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              freeCodeCamp.org
+            </a>
+          </li>
 
-        <li>
+          <li>
+            <strong>Oct 2022</strong> -{" "}
+            <a
+              href="https://pomodoro-technique-timer.vercel.app/"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              &quot;Pomodoro Technique Timer&quot;
+            </a>{" "}
+            (JavaScript) with reference to{" "}
+            <a
+              href="https://www.freecodecamp.org/learn/"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              freeCodeCamp.org
+            </a>
+          </li>
+
+          <li>
             <strong>Oct 2022</strong> -{" "}
             <a
               href="https://drum-machine-9hacy7g2p-tatyy555.vercel.app/"
@@ -43,8 +76,7 @@ export default function TimelineSection({}: Props) {
             </a>
           </li>
 
-
-        <li>
+          <li>
             <strong>Oct 2022</strong> -{" "}
             <a
               href="https://markdown-previewer-henna.vercel.app/"
@@ -61,7 +93,7 @@ export default function TimelineSection({}: Props) {
             </a>
           </li>
 
-        <li>
+          <li>
             <strong>Oct 2022</strong> -{" "}
             <a
               href="https://javascript-calculator-azure.vercel.app/"
