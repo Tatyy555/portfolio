@@ -181,7 +181,7 @@ export default function TimelineSection({}: Props) {
           <li>
             <strong>Oct 2022</strong> -{" "}
             <a
-              href="https://my-nft-game-xfn6.vercel.app/"
+              href="https://my-nft-game-xfn6-tatyy555.vercel.app/"
               className="underline hover:text-my-yellow hover:duration-300"
             >
               &quot;Web3 Game&quot;
