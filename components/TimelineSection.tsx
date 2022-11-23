@@ -25,9 +25,26 @@ export default function TimelineSection({}: Props) {
       >
         <h1 className="mb-10 text-4xl underline font-extrabold">Timeline</h1>
         <ul className="p-10 shadow-xl shadow-blue-300/40 text-left leading-8  lg:text-xl lg:leading-loose bg-my-white sm:overflow-y-scroll sm:scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-300">
+        <li>
+            <strong>Nov 2022</strong> -{" "}
+            <a
+              href="https://www.freecodecamp.org/certification/TATYY/relational-database-v8"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              Certificate for &quot;Relational Database&quot;
+            </a>{" "}
+            from{" "}
+            <a
+              href="https://www.freecodecamp.org/learn/"
+              className="underline hover:text-my-yellow hover:duration-300"
+            >
+              freeCodeCamp.org
+            </a>
+          </li>
           
-       <li> 
-        <strong>Nov 2022</strong> -{" "}
+          
+          <li>
+            <strong>Nov 2022</strong> -{" "}
             <a
               href="https://my-first-vue-one.vercel.app/"
               className="underline hover:text-my-yellow hover:duration-300"
@@ -41,9 +58,8 @@ export default function TimelineSection({}: Props) {
             >
               the YouTube by Behon Baker
             </a>
-          </li> 
-          
-          
+          </li>
+
           <li>
             <strong>Nov 2022</strong> -{" "}
             <a
