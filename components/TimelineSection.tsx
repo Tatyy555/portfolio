@@ -5,7 +5,7 @@ type Props = {};
 
 export default function TimelineSection({}: Props) {
   return (
-    <div id="timeline-section" className="bg-my-lightblue snap-center">
+    <div id="timeline-section" className="bg-my-lightblue snap-start">
       <motion.div
         initial={{
           y: -20,
@@ -21,7 +21,7 @@ export default function TimelineSection({}: Props) {
         viewport={{
           once: true,
         }}
-        className="sm:max-h-screen max-w-7xl mx-auto flex-col min-h-screen flex py-20 px-10 2xl:px-0 bg-my-lightblue "
+        className="sm:max-h-[90vh] max-w-7xl mx-auto flex-col min-h-[90vh] flex py-20 px-10 2xl:px-0 bg-my-lightblue "
       >
         <h1 className="mb-10 text-4xl underline font-extrabold">Timeline</h1>
         <ul className="p-10 shadow-xl shadow-blue-300/40 text-left leading-8  lg:text-xl lg:leading-loose bg-my-white sm:overflow-y-scroll sm:scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-300">

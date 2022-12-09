@@ -48,12 +48,12 @@ export default function Header({}: Props) {
               </li>
             </a>
 
-            <a href="#contact-section">
+            {/* <a href="#contact-section">
               <li className="hover:duration-200 p-4 hover:bg-my-skyblue rounded-3xl flex items-center space-x-2">
                 <ChatBubbleLeftRightIcon className="h-7 w-7" />
                 <p className="hidden md:inline-flex">Contact </p>
               </li>
-            </a>
+            </a> */}
           </ul>
         </motion.div>
       </nav>

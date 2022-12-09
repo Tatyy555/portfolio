@@ -12,13 +12,7 @@ type Props = {
 
 export default function WelcomeSection({ skills }: Props) {
   const [text] = useTypewriter({
-    words: [
-      "Nice to meet you!",
-      "Thank you for visiting.",
-      "I'm Tatsuya Yamaguchi.",
-      "Guy-who-loves-Manga.tsx",
-      "<ButLovesToCodeMore />",
-    ],
+    words: ["Thank you very much for visiting!", "This is Personal Library!"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -26,7 +20,7 @@ export default function WelcomeSection({ skills }: Props) {
   return (
     <div
       id="welcome-section"
-      className="flex flex-col text-center h-screen bg-mine justify-center w-screen items-center  z-0 snap-center"
+      className="flex flex-col text-center h-[50vh] bg-mine justify-center w-screen items-center z-0 snap-center"
     >
       <motion.div
         initial={{
@@ -43,17 +37,17 @@ export default function WelcomeSection({ skills }: Props) {
         viewport={{
           once: true,
         }}
-        className=" flex items-center justify-center relative "
+        className="h-full flex flex-col items-center justify-center"
       >
-        <BackgroundCircle />
-        <div className="absolute flex flex-col w-screen ">
-          <h1 className=" text-my-white text-3xl md:font-bold sm:text-5xl md:text-6xl lg:text-7xl font-Arial leading-relaxed lg:pb-8 lg:leading-loose z-10">
-            <span className="mr-3 overflow-hidden text-ellipsis underline decoration-yellow-500 decoration-[0.5rem]">{text}</span>
+        {/* <BackgroundCircle /> */}
+        <div className="h-full flex flex-col justify-center items-center w-screen">
+          <h1 className=" text-my-white text-3xl md:font-bold sm:text-5xl md:text-6xl lg:text-7xl font-Arial leading-relaxed lg:leading-loose z-10 ">
+            <span className="mr-3 overflow-hidden text-ellipsis underline decoration-yellow-500 decoration-[0.5rem]">
+              {text}
+            </span>
             <Cursor cursorColor="#F7AB0A" />
           </h1>
-          <p className="text-yellow-400 text-3xl italic lg:text-5xl font-bold font-Arial mt-2">
-            a web developer
-          </p>
+
           {/* <div className="mt-3 flex space-x-2 flex-wrap max-w-xs sm:max-w-sm mx-auto justify-center">
           {skills?.map((skill) => (
             <div key={skill?._id} >
@@ -67,7 +61,7 @@ export default function WelcomeSection({ skills }: Props) {
           ))}
           </div> */}
         </div>
-        <div className="w-screen absolute  bg-my-yellow/10  h-[350px] -skew-y-12 "></div>
+        {/* <div className="w-screen absolute  bg-my-yellow/10  h-[350px] -skew-y-12 "></div> */}
       </motion.div>
     </div>
   );

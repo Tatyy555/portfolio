@@ -38,7 +38,7 @@ const Home = ({ projects, skills }: Props) => {
       <TimelineSection />
 
       {/* ---Contact Section--- */}
-      <ContactSction />
+      {/* <ContactSction /> */}
 
       {/* ---Footer Section--- */}
       <Footer />
